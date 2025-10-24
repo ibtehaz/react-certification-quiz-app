@@ -1,0 +1,741 @@
+/* ================================
+   TABLET DEVICES (768px to 1024px)
+   ================================ */
+
+@media (max-width: 1024px) {
+    .main-content {
+        padding: var(--spacing-lg);
+    }
+
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .app-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .welcome-content h2 {
+        font-size: 2rem;
+    }
+
+    .difficulty-selector {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .leaderboard-header,
+    .leaderboard-entry {
+        grid-template-columns: 40px 1fr 90px 90px 100px;
+    }
+
+    .question-text {
+        font-size: 1.15rem;
+    }
+
+    .final-score {
+        font-size: 3rem;
+    }
+
+    .results-content {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* ================================
+   MOBILE DEVICES (480px to 768px)
+   ================================ */
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: var(--spacing-md);
+    }
+
+    .app-header {
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .header-content {
+        gap: var(--spacing-md);
+    }
+
+    .logo-section {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .app-title {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .app-subtitle {
+        font-size: 0.7rem;
+        margin-top: 2px;
+    }
+
+    .icon-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Welcome Screen */
+    .welcome-container {
+        min-height: calc(100vh - 120px);
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .welcome-icon {
+        font-size: 3.5rem;
+    }
+
+    .welcome-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-content > p {
+        font-size: 1rem;
+    }
+
+    .mode-selector {
+        grid-template-columns: 1fr;
+    }
+
+    .mode-btn {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .mode-icon {
+        font-size: 1.5rem;
+    }
+
+    .difficulty-selector {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xs);
+    }
+
+    .diff-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+
+    .category-selector {
+        gap: var(--spacing-xs);
+    }
+
+    .cat-chip {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .welcome-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    /* Quiz Screen */
+    .quiz-container {
+        max-width: 100%;
+    }
+
+    .quiz-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+
+    .quiz-info {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .quiz-stats {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .timer-display {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timer-text {
+        font-size: 1.5rem;
+    }
+
+    .question-section {
+        padding: var(--spacing-md);
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+    }
+
+    .answer-option {
+        padding: var(--spacing-md);
+    }
+
+    .answer-letter {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+        margin-right: var(--spacing-sm);
+    }
+
+    .answer-text {
+        font-size: 0.95rem;
+    }
+
+    .quiz-navigation {
+        flex-direction: column;
+    }
+
+    .quiz-navigation .btn {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Results Screen */
+    .results-container {
+        min-height: auto;
+        padding: var(--spacing-md);
+    }
+
+    .results-content {
+        padding: var(--spacing-lg) var(--spacing-md);
+        border-radius: var(--radius-lg);
+    }
+
+    .results-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .final-score {
+        font-size: 2.5rem;
+    }
+
+    .performance-metrics {
+        padding: var(--spacing-md);
+    }
+
+    .metric-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .metric-label {
+        min-width: auto;
+    }
+
+    .metric-bar {
+        width: 100%;
+        margin-top: var(--spacing-xs);
+    }
+
+    .category-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .results-actions {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .results-actions .btn {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Leaderboard */
+    .leaderboard-content {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .leaderboard-tabs {
+        gap: var(--spacing-sm);
+    }
+
+    .leaderboard-tab {
+        padding: var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+
+    .leaderboard-header,
+    .leaderboard-entry {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .leaderboard-header {
+        padding: var(--spacing-sm);
+        font-size: 0.8rem;
+        display: none;
+    }
+
+    .leaderboard-entry {
+        display: flex;
+        flex-direction: column;
+        padding: var(--spacing-md);
+    }
+
+    .leaderboard-entry span {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .leaderboard-entry span::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: var(--text-muted);
+    }
+
+    .rank-info {
+        grid-template-columns: 1fr;
+    }
+
+    /* Modal */
+    .modal {
+        width: 95%;
+        padding: var(--spacing-lg);
+    }
+
+    .settings-actions {
+        flex-direction: column;
+    }
+
+    .settings-actions .btn {
+        width: 100%;
+    }
+
+    /* Toast */
+    .toast-container {
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        bottom: var(--spacing-md);
+    }
+
+    .toast {
+        min-width: auto;
+        max-width: 100%;
+    }
+}
+
+/* ================================
+   SMALL MOBILE DEVICES (< 480px)
+   ================================ */
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 13px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        padding: var(--spacing-sm);
+    }
+
+    .app-header {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .header-content {
+        gap: var(--spacing-sm);
+    }
+
+    .app-title {
+        font-size: 1.1rem;
+    }
+
+    .app-subtitle {
+        display: none;
+    }
+
+    .icon-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+        padding: 4px;
+    }
+
+    /* Welcome Screen */
+    .welcome-container {
+        min-height: calc(100vh - 100px);
+    }
+
+    .welcome-content {
+        max-width: 100%;
+    }
+
+    .welcome-icon {
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .welcome-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .welcome-content > p {
+        font-size: 0.95rem;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .mode-selector {
+        gap: var(--spacing-sm);
+    }
+
+    .mode-btn {
+        padding: var(--spacing-md) var(--spacing-sm);
+        gap: var(--spacing-xs);
+    }
+
+    .mode-icon {
+        font-size: 1.3rem;
+    }
+
+    .mode-title {
+        font-size: 0.9rem;
+    }
+
+    .mode-desc {
+        font-size: 0.75rem;
+    }
+
+    .difficulty-selector {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xs);
+    }
+
+    .diff-btn {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+
+    .cat-chip {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    .welcome-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* Quiz */
+    .quiz-header {
+        gap: var(--spacing-sm);
+    }
+
+    .question-counter {
+        font-size: 0.9rem;
+    }
+
+    .category-badge {
+        font-size: 0.75rem;
+        padding: 2px 8px;
+    }
+
+    .timer-display {
+        width: 90px;
+        height: 90px;
+    }
+
+    .timer-text {
+        font-size: 1.2rem;
+    }
+
+    .timer-circle {
+        font-size: 0.8rem;
+    }
+
+    .question-section {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .question-text {
+        font-size: 1rem;
+    }
+
+    .answer-option {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .answer-letter {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+        margin-right: 8px;
+    }
+
+    .answer-text {
+        font-size: 0.9rem;
+    }
+
+    .feedback-section {
+        padding: var(--spacing-md);
+        border-left-width: 3px;
+    }
+
+    .feedback-title {
+        font-size: 1rem;
+    }
+
+    .feedback-explanation {
+        font-size: 0.9rem;
+    }
+
+    /* Results */
+    .results-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .final-score {
+        font-size: 2rem;
+    }
+
+    .final-score-label {
+        font-size: 1rem;
+    }
+
+    .performance-metrics {
+        padding: var(--spacing-md);
+    }
+
+    .metric-row {
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .metric-label {
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+
+    .metric-value {
+        font-size: 1.1rem;
+    }
+
+    .category-stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .category-stat {
+        padding: var(--spacing-sm);
+    }
+
+    .category-name {
+        font-size: 0.85rem;
+    }
+
+    .category-score {
+        font-size: 1.3rem;
+    }
+
+    /* Leaderboard */
+    .leaderboard-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .leaderboard-tabs {
+        gap: var(--spacing-xs);
+    }
+
+    .leaderboard-tab {
+        padding: var(--spacing-xs);
+        font-size: 0.75rem;
+    }
+
+    .your-rank {
+        padding: var(--spacing-md);
+    }
+
+    .your-rank h3 {
+        font-size: 1rem;
+    }
+
+    .rank-info-value {
+        font-size: 1.2rem;
+    }
+
+    /* Modal */
+    .modal {
+        width: 95%;
+        max-height: 95vh;
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .modal h2 {
+        font-size: 1.3rem;
+    }
+
+    .settings-group {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .setting-label {
+        font-size: 0.95rem;
+    }
+
+    .setting-label input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Toast */
+    .toast-container {
+        left: var(--spacing-sm);
+        right: var(--spacing-sm);
+        bottom: var(--spacing-sm);
+    }
+
+    .toast {
+        min-width: auto;
+        max-width: 100%;
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .toast-icon {
+        font-size: 1.2rem;
+    }
+
+    .toast-message {
+        font-size: 0.9rem;
+    }
+}
+
+/* ================================
+   LANDSCAPE ORIENTATION
+   ================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .welcome-container {
+        min-height: auto;
+        padding: var(--spacing-md);
+    }
+
+    .welcome-icon {
+        font-size: 2rem;
+    }
+
+    .welcome-stats {
+        display: none;
+    }
+
+    .timer-display {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timer-text {
+        font-size: 1rem;
+    }
+}
+
+/* ================================
+   HIGH RESOLUTION DISPLAYS
+   ================================ */
+
+@media (min-width: 1920px) {
+    :root {
+        font-size: 18px;
+    }
+
+    .main-content {
+        max-width: 1400px;
+    }
+
+    .quiz-container {
+        max-width: 1100px;
+    }
+}
+
+/* ================================
+   TOUCH DEVICES
+   ================================ */
+
+@media (hover: none) and (pointer: coarse) {
+    button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .answer-option {
+        min-height: 50px;
+        padding: var(--spacing-lg);
+    }
+
+    .mode-btn {
+        min-height: 80px;
+    }
+
+    input, select, textarea {
+        min-height: 44px;
+    }
+
+    .icon-btn {
+        min-height: 50px;
+        min-width: 50px;
+    }
+}
+
+/* ================================
+   PRINT STYLES
+   ================================ */
+
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .app-header,
+    .icon-btn,
+    .quiz-navigation,
+    .results-actions,
+    #timerSection {
+        display: none !important;
+    }
+
+    .screen {
+        page-break-after: always;
+    }
+
+    .modal-overlay {
+        display: none !important;
+    }
+
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}

@@ -1,0 +1,54 @@
+# Node modules (if ever used)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Package manager files
+package-lock.json
+yarn.lock
+
+# IDE and Editor
+.vscode/
+.idea/
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.vim/
+
+# Build directories
+dist/
+build/
+.cache/
+.next/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Local development
+.local/
+local/
