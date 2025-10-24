@@ -108,10 +108,17 @@ class UIManager {
         options.forEach((option, index) => {
             const answerDiv = document.createElement('button');
             answerDiv.className = 'answer-option';
-            answerDiv.innerHTML = `
-                <span class="answer-letter">${String.fromCharCode(65 + index)}</span>
-                <span class="answer-text">${option}</span>
-            `;
+            
+            const letterSpan = document.createElement('span');
+            letterSpan.className = 'answer-letter';
+            letterSpan.textContent = String.fromCharCode(65 + index);
+            
+            const textSpan = document.createElement('span');
+            textSpan.className = 'answer-text';
+            textSpan.textContent = option; // Use textContent to prevent HTML parsing
+            
+            answerDiv.appendChild(letterSpan);
+            answerDiv.appendChild(textSpan);
             answerDiv.dataset.index = index;
             this.DOM.answersGrid.appendChild(answerDiv);
         });
@@ -159,13 +166,18 @@ class UIManager {
         const statusText = isCorrect ? '✅ Correct!' : '❌ Incorrect!';
         const borderColor = isCorrect ? '#00d084' : '#ff4444';
         
+        const hasReference = reference && typeof reference === 'string' && reference.trim().length > 0;
+        const referenceBlock = hasReference
+            ? `<div class="feedback-reference">
+                <strong>Learn more:</strong>
+                <a href="${reference}" target="_blank" rel="noopener noreferrer">W3Schools React Reference →</a>
+            </div>`
+            : '';
+
         this.DOM.feedbackContent.innerHTML = `
             <div class="feedback-title">${statusText}</div>
             <div class="feedback-explanation">${explanation}</div>
-            <div class="feedback-reference">
-                <strong>Learn more:</strong>
-                <a href="${reference}" target="_blank" rel="noopener noreferrer">W3Schools React Reference →</a>
-            </div>
+            ${referenceBlock}
         `;
         
         // Update section styling

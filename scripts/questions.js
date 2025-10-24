@@ -1,13 +1,13 @@
 const REACT_QUESTIONS_V2 = [
   // ===== FOUNDATIONS & JSX =====
   { id: 1, category: "Foundations & JSX", difficulty: "beginner",
-    question: "What does JSX stand for?",
+        question: "What does JSX stand for?",
     options: ["JavaScript XML","JavaScript Extra","Java Syntax eXtension","JSON eXtension"],
     correctAnswer: 0, tags:["jsx","basics"]
   },
   { id: 2, category: "Foundations & JSX", difficulty: "beginner",
     question: "In React 18+, how do you render a component tree to the DOM?",
-    options: [
+        options: [
       "ReactDOM.render(<App />, document.getElementById('root'))",
       "createRoot(document.getElementById('root')).render(<App />)",
       "renderDOM(<App />, '#root')",
@@ -17,9 +17,9 @@ const REACT_QUESTIONS_V2 = [
   },
   { id: 3, category: "Foundations & JSX", difficulty: "beginner",
     question: "A React component is typically…",
-    options: [
+        options: [
       "A JS function/class that returns JSX",
-      "A CSS class",
+            "A CSS class",
       "An HTML template file",
       "A database row"
     ],
@@ -32,7 +32,7 @@ const REACT_QUESTIONS_V2 = [
   },
   { id: 5, category: "Foundations & JSX", difficulty: "intermediate",
     question: "What does a Fragment let you do?",
-    options: [
+        options: [
       "Group children without adding an extra DOM node",
       "Memoize heavy components",
       "Create portals",
@@ -42,7 +42,7 @@ const REACT_QUESTIONS_V2 = [
   },
   { id: 6, category: "Foundations & JSX", difficulty: "intermediate",
     question: "How do you conditionally render in JSX?",
-    options: [
+        options: [
       "Use ternaries or && inside JSX, or if statements outside",
       "Use switch statements in JSX tags",
       "Use while loops in JSX",
@@ -59,7 +59,7 @@ const REACT_QUESTIONS_V2 = [
   },
   { id: 8, category: "State & Props", difficulty: "intermediate",
     question: "What is the purpose of the 'key' prop in lists?",
-    options: [
+        options: [
       "Helps React identify items for efficient updates",
       "Required for styling each li",
       "Counts the number of items",
@@ -69,7 +69,7 @@ const REACT_QUESTIONS_V2 = [
   },
   { id: 9, category: "State & Props", difficulty: "beginner",
     question: "State in a component is best described as:",
-    options: [
+        options: [
       "Data that can change over time and triggers re-render",
       "Static config values",
       "Server-side session data",
@@ -621,7 +621,7 @@ const REACT_QUESTIONS_V2 = [
       "DOM nodes directly"
     ],
     correctAnswer:1, tags:["jsx","compilation"]
-  }
+    }
 ];
 
 // Export for use in other files
