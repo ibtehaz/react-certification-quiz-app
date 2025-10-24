@@ -459,7 +459,7 @@ pre {
     overflow-y: auto;
     z-index: 201;
     box-shadow: var(--shadow-lg);
-    animation: slideUp var(--transition-base);
+    animation: modalSlideUp var(--transition-base);
     display: none;
 }
 
